@@ -1,0 +1,130 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root{
+  --clr-accent-dark: hsl(263, 55%, 52%);
+  --clr-mnchr-light: hsl(217, 19%, 35%);
+  --clr-mnchr-dark: hsl(219, 29%, 14%);
+  --clr-txt-light: #ffeaff;
+  --clr-txt-dark: #585c67;
+  --clr-add: hsl(210, 46%, 95%);
+
+  --ff: 'Barlow Semi Condensed', sans-serif;
+}
+
+body{
+  margin: 0;
+  font-family: var(--ff);
+  font-size: 13px;
+  background-color: var(--clr-add);
+  display: grid;
+  place-content: center;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+.card.background-accent-dark {
+  background-color: var(--clr-accent-dark);
+}
+
+.card.background-accent-light {
+  background-color: var(--clr-accent-light);
+}
+
+.card.background-mnchr-dark {
+  background-color: var(--clr-mnchr-dark);
+}
+
+.card.backround-mnchr-light{
+  background-color: var(--clr-mnchr-light);
+}
+
+.txt-light {
+  color: var(--clr-txt-light);
+}
+
+.txt-dark {
+  color: var(--clr-txt-dark);
+}
+
+.card__body-paragraph--normal-txt {
+  opacity: 70%;
+}
+
+.quotation {
+  background-image: url(../images/bg-pattern-quotation.svg);
+  background-repeat: no-repeat;
+  background-position: 90% 5%;
+}
+
+.cards {
+  display: grid;
+  grid-gap: 1.5rem;
+  padding: 5em;
+}
+
+.card {
+  padding: 2em;
+  border-radius: 20px;
+  display: grid;
+  grid-template-columns: 70px 2fr;
+  justify-content: left;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.card__header {
+  grid-column: 2 / 3;
+  grid-row: 1;
+}
+
+.card__header--name,
+.card__header--pos{
+  margin: 0;
+}
+
+.card__header--pos{
+  opacity: 50%;
+}
+
+.card__img {
+  border-radius: 50%;
+  grid-column: 1 / 2;
+}
+
+.card__body {
+  grid-column: span 3;
+  grid-row: 2
+}
+
+.card__img {
+  grid-column: 1 / 2;
+  grid-row: 1;
+}
+
+@media(min-width: 1000px){
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+  }
+
+.card:last-child {
+  grid-column-start: 4;
+  grid-row: 1 / 3;
+}
+
+.card:first-child {
+  grid-column: span 2;
+}
+
+.card:nth-child(4) {
+  grid-column: span 2;
+}
+}
