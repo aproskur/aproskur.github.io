@@ -22,7 +22,7 @@
   --ff-secondary: 'Fraunces', serif;
   --ff-primary: 'Barlow', sans-serif;
 
-  --fs-h1: 2rem;
+  --fs-h1: 1.6rem;
   --fs-h2: 2.25rem;
   --fs-h3: 1.25rem;
   --fs-body: 1rem;
@@ -333,7 +333,7 @@ img {
   flex-direction: column;
   max-width: 375px;
   max-height: 375px;
-  padding: 2em;
+  padding: 3em;
 }
  .card-text {
    color: var(--clr-dark-greyish-blue);
@@ -435,7 +435,7 @@ img {
   }
 
   .card {
-    padding: 1em;
+    padding: 5em;
     max-width: 800px;
     max-height: 800px;
   }
