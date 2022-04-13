@@ -13,6 +13,7 @@
   --clr-add: hsl(210, 46%, 95%);
 
   --ff: 'Barlow Semi Condensed', sans-serif;
+  --fs-big: 1rem;
 }
 
 body{
@@ -52,6 +53,11 @@ img {
 .txt-dark {
   color: var(--clr-txt-dark);
 }
+
+.card__body-paragraph--emphasized-txt {
+  font-size: var(--fs-big);
+}
+
 
 .card__body-paragraph--normal-txt {
   opacity: 70%;
