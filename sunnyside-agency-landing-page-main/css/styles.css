@@ -62,6 +62,7 @@ img {
   display: flex;
   justify-content: space-between;
   position: relative;
+  padding: 1.5em;
 }
 
 .nav-toggle {
@@ -71,7 +72,7 @@ img {
   cursor: pointer;
   position: absolute;
   right: 1em;
-  top: 1em;
+  top: 3em;
   z-index: 999;
 }
 
@@ -118,10 +119,10 @@ img {
 
 .nav-open .nav {
     transform: translateX(0);
-    top: 5rem;
+    top: 6rem;
     left: 2rem;
     right: 2rem;
-    bottom: 20rem;
+    bottom: 25rem;
 }
 
 
@@ -172,6 +173,7 @@ img {
   border-radius: 20px;
   font-weight: 600;
   padding: 5px;
+  text-align: center;
 }
 
 .nav_button a {
@@ -185,7 +187,7 @@ img {
 
 
 
-@media (min-width: 700px) {
+@media (min-width: 850px) {
 
 
   .nav-open .nav::after {
@@ -234,6 +236,7 @@ img {
 
 .nav_button {
   background-color: var(--clr-white);
+  text-align: center;
 }
 
 .nav_button:hover {
