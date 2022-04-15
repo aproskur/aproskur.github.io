@@ -18,11 +18,17 @@
  <main class="advice-card">
    <div class="advice-part">
      <h1 class="advice-header"> Advice #<span class="advice-number" id="advice-number"></span></h1>
-     <div class="advice-text" id="advice-text"> </div>
+     <blockquote><p class="advice-text" id="advice-text"></p></blockquote>
    </div>
    <div class="decoration-part">
      <div class="divider">
-        <img class="div-pic" src="images/pattern-divider-desktop.svg" alt="divider">
+       <img srcset="images/pattern-divider-mobile.svg 295w,
+             images/pattern-divider-desktop.svg 444w"
+     sizes="(max-width: 800px) 295px,
+            444px"
+     src="images/pattern-divider-desktop.svg">
+
+
      </div>
      <div class="icon-button">
        <button type="button" name="button" id="toggle-advice"><img src="images/icon-dice.svg" alt="dice"></button>
