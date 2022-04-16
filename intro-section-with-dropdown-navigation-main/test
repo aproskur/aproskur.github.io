@@ -1,0 +1,13 @@
+<img srcset="images/image-hero-mobile.png 750w,
+             images/image-hero-desktop.png 960w"
+      sizes="(min-width: 800px) 750px,
+                                960px"
+      src="images/image-hero-desktop.png"
+      alt="man working on a laptop"/>
+
+      <img srcset="images/image-hero-mobile.png 750w,
+                   images/image-hero-desktop.png 960w"
+            sizes="(min-width: 800px) 960px,
+                                      750px"
+            src="images/image-hero-desktop.png"
+            alt="man working on a laptop" />
