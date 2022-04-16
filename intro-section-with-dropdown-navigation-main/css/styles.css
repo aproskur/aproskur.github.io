@@ -310,10 +310,11 @@ main {
     margin: 0 0.5em;
   }
 
-
+  h1 {
+    font-size: 4rem;
+  }
 
   .access {
-
     display: flex;
     margin-top: 0;
   }
@@ -381,9 +382,18 @@ main {
     margin: 0;
   }
 
-  .article {
-    padding: 4em;
+
+    .article {
+      margin-left: 16px;
+      margin-right: 16px;
+      display: flex;
+      flex-direction: column;
+      padding: 4em;
+      align-items: flex-start;
   }
 
+  .article p {
+    text-align: left;
+  }
 
 }
