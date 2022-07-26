@@ -201,7 +201,7 @@ header {
 .hamburger::after { bottom: 6px; }
 
 .nav-open .hamburger::before,
-.nav-open .hamburger::after {}
+.nav-open .hamburger::after,
 .nav-open .hamburger {
   display: none;
 }
