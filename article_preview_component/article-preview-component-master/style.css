@@ -8,18 +8,16 @@
 
 body {
   font-size: var(--fs);
-  font-family: Manrope;
+  font-family: Manrope, sans-serif;
   background-color: var(--light-grayish);
   color: var(--desaturated-dark-blue);
   display: flex;
   align-items: center;
-  align-content: center;
-  flex-direction: column;
+  justify-content: center;
 }
 
-
 .card {
-  margin-top: 100px;
+  margin-top: 200px;
   display: flex;
   flex-direction: column;
   min-width: 250px;
@@ -78,7 +76,7 @@ body {
 
 .share i {
     background-color: var(--light-grayish);
-    color: var(--grayish-blue);
+    color: var(--desaturated-dark-blue);
     padding: 10px;
     border-radius: 50px;
 }
@@ -138,9 +136,11 @@ body {
 
 @media (min-width: 900px) {
 
+
+
   .card {
     display: grid;
-    grid-template-columns: 30% 70%;
+    grid-template-columns: 40% 60%;
     grid-template-rows: 1fr 1fr 1fr;
     grid-template-areas: "img card-body"
                          "img card-body"
@@ -148,13 +148,13 @@ body {
     max-width: 800px;
     border-radius: 10px;
     background-color: #fff;
-    max-height: 250px;
+    max-height: 300px;
   }
 
   .hero-image {
     grid-area: img;
     height: 100%;
-    max-width: 250px;
+    max-width: 300px;
 
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
@@ -163,6 +163,12 @@ body {
 
   .card-body {
     grid-area: card-body;
+    padding-right: 60px 0;
+    font-size: 15px;
+  }
+
+  .emphasized {
+    font-size: 20px;
   }
 
   .card-footer {
@@ -194,7 +200,7 @@ body {
     border-right: 8px solid transparent;
     position: relative;
     top: 30px;
-    right: 80px;
+    right: 85px;
   }
 
   .popover-body {
