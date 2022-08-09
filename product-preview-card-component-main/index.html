@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/output.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet">
@@ -20,18 +20,20 @@
 </head>
 <body class="bg-cream">
   <main class="grid h-screen place-items-center">
-    <div class="flex flex-col rounded bg-white max-w-xs md:flex-row md:max-w-lg">
-      <div class="card-image md:w-1/2"></div>
-      <div class="flex flex-col p-7 space-y-2 md:w-1/2">
-        <div class="heading text-xs text-gray-400 tracking-wide uppercase">perfume</div>
-        <div class="w-65 font-fraunces text-4xl md:w-60">Gabrielle Essence Eau De&nbsp;Parfum</div>
-        <div class="leading-6 text-sm text-gray-500 font-montserrat">  A floral, solar and voluptuous interpretation composed by Olivier Polge,
-          Perfumer-Creator for the House of CHANEL.</div>
-          <div class="flex space-x-10 content-around"><span class="text-3xl text-darkCyan font-fraunces tracking-wider font-extrabold">$149.99</span>
-            <span class="text-gray-500 align-self-center line-through text-s">$169.99</span></div>
-            <button class="flex items-center justify-center space-x-2 px-10 py-2 bg-darkCyan rounded w-90 color-cream font-montserrat hover:bg-emerald-900">
-              <span><svg width="15" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M14.383 10.388a2.397 2.397 0 0 0-1.518-2.222l1.494-5.593a.8.8 0 0 0-.144-.695.8.8 0 0 0-.631-.28H2.637L2.373.591A.8.8 0 0 0 1.598 0H0v1.598h.983l1.982 7.4a.8.8 0 0 0 .799.59h8.222a.8.8 0 0 1 0 1.599H1.598a.8.8 0 1 0 0 1.598h.943a2.397 2.397 0 1 0 4.507 0h1.885a2.397 2.397 0 1 0 4.331-.376 2.397 2.397 0 0 0 1.12-2.021ZM11.26 7.99H4.395L3.068 3.196h9.477L11.26 7.991Zm-6.465 6.392a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Zm6.393 0a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Z" fill="#FFF"/></svg></span><span class="text-cream">Add to Cart</span></button>
-      </div>
+    <div class="card flex flex-col rounded-xl bg-white md:flex-row">
+      <div class="card-image md:rounded-l-xl"></div>
+        <div class="info-part flex flex-col p-7 space-y-2">
+            <div class="heading text-xs text-gray-400 tracking-wide uppercase">perfume</div>
+            <div class="w-65 font-fraunces text-4xl md:w-60">Gabrielle Essence Eau De&nbsp;Parfum</div>
+            <div class="leading-6 text-sm text-gray-500 font-montserrat">
+              A floral, solar and voluptuous interpretation composed by Olivier Polge,
+              Perfumer-Creator for the House of CHANEL.
+            </div>
+              <div class="flex space-x-10 content-around"><span class="price text-3xl text-darkCyan font-fraunces tracking-wider font-bold">$149.99</span>
+                <span class="text-gray-500 align-self-center line-through text-s">$169.99</span></div>
+                <button class="flex items-center justify-center text-xs font-bold space-x-2 px-10 py-2 bg-darkCyan rounded w-90 color-cream font-montserrat hover:bg-emerald-900">
+                  <span><svg width="15" height="16" xmlns="http://www.w3.org/2000/svg"><path d="M14.383 10.388a2.397 2.397 0 0 0-1.518-2.222l1.494-5.593a.8.8 0 0 0-.144-.695.8.8 0 0 0-.631-.28H2.637L2.373.591A.8.8 0 0 0 1.598 0H0v1.598h.983l1.982 7.4a.8.8 0 0 0 .799.59h8.222a.8.8 0 0 1 0 1.599H1.598a.8.8 0 1 0 0 1.598h.943a2.397 2.397 0 1 0 4.507 0h1.885a2.397 2.397 0 1 0 4.331-.376 2.397 2.397 0 0 0 1.12-2.021ZM11.26 7.99H4.395L3.068 3.196h9.477L11.26 7.991Zm-6.465 6.392a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Zm6.393 0a.8.8 0 1 1 0-1.598.8.8 0 0 1 0 1.598Z" fill="#FFF"/></svg></span><span class="text-cream">Add to Cart</span></button>
+        </div>
     </div>
   </main>
 
@@ -48,7 +50,7 @@
 
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Anna</a>.
   </div>
 </body>
 </html>
